@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>WPF</id>
+    <version>1.0.0</version>
+    <authors>WPF</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="formulas" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="FastReport.OpenSource" version="2023.2.13" exclude="Build,Analyzers" />
+        <dependency id="FastReport.OpenSource.Export.PdfSimple" version="2023.2.13" exclude="Build,Analyzers" />
+        <dependency id="LiveCharts.Wpf" version="0.9.7" exclude="Build,Analyzers" />
+        <dependency id="PDFsharp" version="6.0.0-preview-2" exclude="Build,Analyzers" />
+        <dependency id="ReactiveUI" version="18.4.34" exclude="Build,Analyzers" />
+        <dependency id="ReactiveUI.WPF" version="18.4.44" exclude="Build,Analyzers" />
+        <dependency id="System.Drawing.Common" version="8.0.0-preview.2.23128.3" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Encoding.CodePages" version="8.0.0-preview.3.23174.8" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Lenovo\source\repos\formulas\WPF\bin\Debug\net6.0-windows\WPF.runtimeconfig.json" target="lib\net6.0-windows7.0\WPF.runtimeconfig.json" />
+    <file src="C:\Users\Lenovo\source\repos\formulas\WPF\bin\Debug\net6.0-windows\WPF.dll" target="lib\net6.0-windows7.0\WPF.dll" />
+  </files>
+</package>
