@@ -132,10 +132,6 @@
               "target": "Package",
               "version": "[0.9.7, )"
             },
-            "PDFsharp": {
-              "target": "Package",
-              "version": "[6.0.0-preview-2, )"
-            },
             "ReactiveUI": {
               "target": "Package",
               "version": "[18.4.34, )"

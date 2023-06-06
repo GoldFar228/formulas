@@ -15,12 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_3B8188A8A3A94CF982E46228950FD928"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_562330F6C79249B1BE989DF03382D095"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -34,6 +28,12 @@
         "Entry"
         {
         "MsmKey" = "8:_B33706E1C10948298FC92552DE583192"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DC7345EA5A5341599CE60919D886F821"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -62,6 +62,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -86,6 +94,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -118,10 +134,10 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3B8188A8A3A94CF982E46228950FD928"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B33706E1C10948298FC92552DE583192"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\Справочная помощь пользователю.pdf"
-            "TargetName" = "8:Справочная помощь пользователю.pdf"
+            "SourcePath" = "8:..\\WPF\\bin\\Debug\\net6.0-windows\\Table.frx"
+            "TargetName" = "8:Table.frx"
             "Tag" = "8:"
             "Folder" = "8:_0D2433D8FB05488B92159F68FF73F5A6"
             "Condition" = "8:"
@@ -138,10 +154,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B33706E1C10948298FC92552DE583192"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DC7345EA5A5341599CE60919D886F821"
             {
-            "SourcePath" = "8:..\\WPF\\bin\\Debug\\net6.0-windows\\Table.frx"
-            "TargetName" = "8:Table.frx"
+            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\Справочная помощь.pdf"
+            "TargetName" = "8:Справочная помощь.pdf"
             "Tag" = "8:"
             "Folder" = "8:_0D2433D8FB05488B92159F68FF73F5A6"
             "Condition" = "8:"
@@ -215,7 +231,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Setup"
         "ProductCode" = "8:{DC17348E-9293-49D8-859A-7ED667023A85}"
-        "PackageCode" = "8:{D4C52D91-97B4-4631-81E2-037868292625}"
+        "PackageCode" = "8:{291F705A-7594-4EC8-BB7C-ED5D17BD4812}"
         "UpgradeCode" = "8:{6D55A60E-5C98-4DAC-B8B2-BCBBFAA5A96C}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -349,15 +365,15 @@
             "Icon" = "8:"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_408A5789CF724D6EA4E3EBEB460E067C"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_698E2B2EE20D43C99282511C3C860329"
             {
-            "Name" = "8:Справочная помощь пользователю.pdf"
+            "Name" = "8:Shortcut to Справочная помощь.pdf"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_3B8188A8A3A94CF982E46228950FD928"
+            "Target" = "8:_DC7345EA5A5341599CE60919D886F821"
             "Folder" = "8:_895BFF41F48D4E67B01F90571E4F34D4"
             "WorkingFolder" = "8:_0D2433D8FB05488B92159F68FF73F5A6"
             "Icon" = "8:"

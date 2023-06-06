@@ -9,6 +9,7 @@ using System.Reactive;
 using FastReport;
 using FastReport.Export.Image;
 using FastReport.Export.PdfSimple;
+using System.IO;
 
 namespace WPF
 {
@@ -232,7 +233,6 @@ namespace WPF
         public ReactiveCommand<Unit, Unit> RecCom { get; }
         private void PDFLoad()
         {
-
             List<Data> Dataa = new();
             Dataa.Add(new Data { Name = "Желаемый доход %", Value = DesiredProfitPercantage });
             Dataa.Add(new Data { Name = "Объём продаж", Value = SellVolume });
@@ -249,15 +249,25 @@ namespace WPF
             report.RegisterData(Dataa, "Data");
             report.Prepare();
 
-            report.SavePrepared("Prepared_Table.fpx");
+            var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            var appDataFullPath = Path.GetFullPath(appDataPath);
+
+            if (!Directory.Exists($"{appDataFullPath}/Reports"))
+            {
+                Directory.CreateDirectory($"{appDataFullPath}/Reports");
+            }
+
+            report.SavePrepared($"{appDataFullPath}/Reports/Prepared_Table.fpx");
+
+
 
             ImageExport image = new();
             image.ImageFormat = ImageExportFormat.Jpeg;
-            report.Export(image, "report.jpg");
+            report.Export(image, $"{appDataFullPath}/Reports/report.jpg");
 
             PDFSimpleExport pdfExport = new();
 
-            pdfExport.Export(report, "report.pdf");
+            pdfExport.Export(report, $"{appDataFullPath}/Reports/report.pdf");
 
             report.Dispose();
         }
