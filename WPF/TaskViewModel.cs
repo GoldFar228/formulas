@@ -269,7 +269,6 @@ namespace WPF
             pdfExport.Export(report, $"{appDataFullPath}/Reports/report.pdf");
             report.Dispose();
 
-            File.Open(@"C:\Users\Lenovo\AppData\Roaming\Reports\report.pdf", FileMode.Open);
         }
         
     }
