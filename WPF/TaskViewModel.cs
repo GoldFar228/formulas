@@ -10,6 +10,7 @@ using FastReport;
 using FastReport.Export.Image;
 using FastReport.Export.PdfSimple;
 using System.IO;
+using System.Diagnostics;
 
 namespace WPF
 {
@@ -259,8 +260,6 @@ namespace WPF
 
             report.SavePrepared($"{appDataFullPath}/Reports/Prepared_Table.fpx");
 
-
-
             ImageExport image = new();
             image.ImageFormat = ImageExportFormat.Jpeg;
             report.Export(image, $"{appDataFullPath}/Reports/report.jpg");
@@ -268,8 +267,9 @@ namespace WPF
             PDFSimpleExport pdfExport = new();
 
             pdfExport.Export(report, $"{appDataFullPath}/Reports/report.pdf");
-
             report.Dispose();
+
+            File.Open(@"C:\Users\Lenovo\AppData\Roaming\Reports\report.pdf", FileMode.Open);
         }
         
     }
